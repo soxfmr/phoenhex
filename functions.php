@@ -2,8 +2,10 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
-    $disqusID = new Typecho_Widget_Helper_Form_Element_Text('disqusID', NULL, NULL, _t('Disqus ID'), _t('输入您的 Dnsqus ID'));
+    $disqusID = new Typecho_Widget_Helper_Form_Element_Text('disqusID', NULL, NULL, _t('Disqus'), _t('输入您的 Dnsqus ID'));
+    $googleAnalytics = new Typecho_Widget_Helper_Form_Element_Text('googleAnalytics', NULL, NULL, _t('Google Analytics'), _t('输入您的 Google Analytics 跟踪 ID'));
     $form->addInput($disqusID);
+    $form->addInput($googleAnalytics);
 }
 
 
