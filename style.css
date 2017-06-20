@@ -135,8 +135,9 @@ ul.post-meta > li:not(:last-child):after {
 .post-near {
     margin-top: 50px;
 }
-.footer {
+.footer {    
     text-align: center;
-    padding: 50px 0 10px;
+    padding: 50px 20px 10px;
     font-size: 0.86em;
+    color: #999;
 }
